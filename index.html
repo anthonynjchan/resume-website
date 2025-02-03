@@ -7,9 +7,36 @@
         <meta property="og:description" content="A resume website for potential hirers and family to explore"/>
         <title>Anthony Chan</title>
         <link href="images/icon.ico" rel="icon"/>
+        <link href="styles/index.css" rel="stylesheet" />
     </head>
 
     <body>
+        <div>
+            <picture>
+                <source 
+                sizes="(min-width: 600px) 50vw, 600px,
+                    (min-width: 1200px) 50vw, 1200px"
+                srcset="images/meWide.webp 600w,
+                        images/meUltraWide.webp 1200w"
+                type="image/webp">
+    
+                <source
+                sizes="(min-width: 600px) 50vw, 600px,
+                    (min-width: 1200px) 50vw, 1200px"
+                srcset="images/meWide.jpg 600w,
+                    images/meUltraWide.jpg 1200w"
+                type="image/jpeg">
+    
+                <img 
+                    src="images/me.jpg" 
+                    alt="A picture of Anthony"
+                    decoding="sync"
+                    fetchpriority="high">
+            </picture>
 
+            <section>
+                <p>Hello!</p>
+            </section>
+        </div>
     </body>
 </html>
